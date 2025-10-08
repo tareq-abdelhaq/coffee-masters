@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+        <title>Coffee Masters | Checkout</title>
+        <link rel="icon" href="assets/coffee_masters_logo.png"/>
+
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+        />
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <header class="main-header">
+            <img src="assets/coffee_masters_logo.png" alt="A hot delicious coffee" class="logo"/>
+            <h1 class="brand">Coffee Masters</h1>
+        </header>
+        <main class="page">
+            <!--   Order Items   -->
+            <div class="card order-items">
+                <h2 class="card-header">Items</h2>
+                <ul class="order-item-list">
+                    <!--    Order Item #1     -->
+                    <li class="order-item">
+                        <span class="count">1x</span>
+                        <div class="details">
+                            <p class="item-name">Cappucino</p>
+                            <ul class="extra-list">
+                                <li class="extra-item">Light Foam</li>
+                            </ul>
+                        </div>
+                        <span class="price">
+                            $6.00
+                        </span>
+                    </li>
+                    <!--    Order Item #2     -->
+                    <li class="order-item">
+                        <span class="count">1x</span>
+                        <div class="details">
+                            <p class="item-name">Cappucino</p>
+                            <ul class="extra-list">
+                                <li class="extra-item">Almond Milk</li>
+                                <li class="extra-item">Double Espresso Shot</li>
+                            </ul>
+                        </div>
+                        <span class="price">
+                            $7.90
+                        </span>
+                    </li>
+                    <!--    Order Item #3     -->
+                    <li class="order-item">
+                        <span class="count">1x</span>
+                        <div class="details">
+                            <p class="item-name">Croissant</p>
+                            <ul class="extra-list">
+                                <li class="extra-item">Butter</li>
+                            </ul>
+                        </div>
+                        <span class="price">
+                            $5.37
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+            <!--   Order Form   -->
+            <form class="order-form">
+                <div class="card order-info">
+                    <h2 class="card-header">Name</h2>
+                    <div class="control-group">
+                        <label for="order-name" class="label">Name for order</label>
+                        <input id="order-name" class="control"/>
+                    </div>
+                </div>
+                <div class="card payment-info">
+                    <h2 class="card-header">Payment</h2>
+                    <div class="control-group">
+                        <label for="card-number" class="label">Card number</label>
+                        <input id="card-number" class="control"/>
+                    </div>
+                    <div class="control-group">
+                        <label for="ccv" class="label">CCV number</label>
+                        <input id="ccv" class="control inline" />
+                    </div>
+                </div>
+            </form>
+
+            <!-- Order Summary   -->
+            <div class="order-summary">
+                <table class="order-summary-table">
+                    <tbody>
+                    <tr>
+                        <th>Subtotal:</th>
+                        <td>$19.27</td>
+                    </tr>
+                    <tr>
+                        <th>Tax:</th>
+                        <td>$0.96</td>
+                    </tr>
+                    <tr>
+                        <th>Total:</th>
+                        <td>$20.23</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+            <!--   Place order   -->
+            <div class="place-order">
+                <button class="place-order-btn">Place order</button>
+            </div>
+
+        </main>
+    </body>
+</html>
